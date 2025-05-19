@@ -38,15 +38,15 @@ function playRound(humanChoice) {
 
     round++;
 
-    if (round > 5) {
-        setTimeout(() => {
-            if (humanScore > computerScore) {
-                document.getElementById("resultText").textContent = "🎉 You win the game!";
-            } else if (computerScore > humanScore) {
-                document.getElementById("resultText").textContent = "💻 Computer wins the game!";
-            } else {
-                document.getElementById("resultText").textContent = "🤝 It's a tie!";
-            }
-        }, 500);
+        if (round > 5) {
+            setTimeout(() => {
+                if (humanScore > computerScore) {
+                    document.getElementById("resultText").textContent = "🎉 You win the game!";
+                } else if (computerScore > humanScore) {
+                    document.getElementById("resultText").textContent = "💻 Computer wins the game!";
+                } else {
+                    document.getElementById("resultText").textContent = "🤝 It's a tie!";
+                }
+            }, 500);
+        }
     }
-}
